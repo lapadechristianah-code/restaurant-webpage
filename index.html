@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palm & Pepper.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <h1 class="logo">Palm & Pepper.</h1>
+    <a href="#menu" class="explore">Explore the menu ↗</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tagline">A LITTLE SPICE. A LOT OF LOVE.</p>
+      <h2>Good food.<br><span>Great company.</span></h2>
+      <p class="hero-desc">Familiar flavours, generous plates, and something for everyone.<br>Pull up a chair. Find your favourite.</p>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&auto=format&fit=crop" alt="Smoky jollof and chicken">
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <div class="tabs" id="menu">
+    <button class="tab active" onclick="filterMenu('mains', this)">Mains</button>
+    <button class="tab" onclick="filterMenu('sides', this)">Sides</button>
+    <button class="tab" onclick="filterMenu('drinks', this)">Drinks</button>
+  </div>
+
+  <!-- MAINS -->
+  <section id="mains" class="menu-section">
+    <h3>The main event</h3>
+    <p class="sub">Big flavours. Happy plates.</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&auto=format&fit=crop" alt="Smoky jollof">
+        <div class="card-top"><h4>Smoky jollof & chicken</h4><span>₦6,500</span></div>
+        <p>Tomato-rich jollof rice, grilled chicken, and a fresh salad garnish.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop" alt="Beef suya">
+        <div class="card-top"><h4>Beef suya skewers</h4><span>₦5,500</span></div>
+        <p>Spiced beef skewers with sliced onions, fresh tomatoes, and a little extra heat.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop" alt="Plantain and beans">
+        <div class="card-top"><h4>Plantain & beans</h4><span>₦4,000</span></div>
+        <p>Golden sweet plantain with slow-cooked honey beans. Simple, hearty comfort.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIDES + DRINKS -->
+  <section id="sides-drinks" class="menu-section">
+    <div class="two-col">
+      <div id="sides">
+        <h3>A little on the side</h3>
+        <div class="item"><span>Fried plantain</span><b>₦1,500</b></div>
+        <div class="item"><span>Fresh garden salad</span><b>₦2,000</b></div>
+      </div>
+      <div id="drinks">
+        <h3>Something refreshing</h3>
+        <div class="item"><span>Chilled zobo</span><b>₦1,500</b></div>
+        <div class="item"><span>Pineapple & ginger juice</span><b>₦2,000</b></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <h2>Palm & Pepper.</h2>
+  <p>A fictional restaurant menu for learning HTML & CSS.</p>
+  <a href="#menu">Back to the menu ↑</a>
+</footer>
+
+</body>
+</html>
